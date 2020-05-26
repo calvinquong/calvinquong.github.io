@@ -13,7 +13,7 @@
 
 
 
-<a href="https://www.merchantoftennis.com/"target="_blank"> <img src="Images/ssimg.png" alt="Merchant of Tennis Homepage" width=75% height=55%></a>
+<a href="https://www.merchantoftennis.com/"target="_blank"> <img src="Images/ssimg.png" alt="Merchant of Tennis Homepage" width=100% height=40%></a>
 <form
 action= "index.php" name= "my form"method="POST">
 
