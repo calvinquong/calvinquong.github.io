@@ -44,7 +44,6 @@ What is your gender?<br>
 1. Use the website for a few minutes. What do you like about it?(Select all that apply):<br>
 <input type="checkbox" name= "like" value="Pictures"> Pictures/Graphics<br>
 <input type="checkbox" name= "like" value="Items"> Organization of items<br>
-<input type="checkbox" name= "like" value="Discounts"> The amount of discounted items<br>
 <input type="checkbox" name= "like" value="Navigation"> Simple and easy navigation<br>
 <input type="checkbox" name= "like" value="Shipping"> Free shipping<br>
 
