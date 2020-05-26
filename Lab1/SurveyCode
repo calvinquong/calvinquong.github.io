@@ -3,7 +3,7 @@
 <head>
 <title>Survey</title>
 
-<link rel="stylesheet" href="Styles/StyleSheet.css">
+<link rel="stylesheet" href="Styles/StyleSheet.css" type="text/css">
 </head>
 <body>
 
