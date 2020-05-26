@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey</title>
 
+<link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+
+
+<h1 class="webname"; >Website UI Evaluation</h1>
+<h3> What are your thoughts on the UI of <a href="https://www.merchantoftennis.com/"target="_blank"> Merchant of Tennis</a>' website?</h3>
+
+
+
+<a href="https://www.merchantoftennis.com/"target="_blank"> <img src="ssimg.png" alt="Merchant of Tennis Homepage" width=100% height=40%></a>
+<form
+action= "index.php" name= "my form"method="POST">
+
+<br>
+<br>
+
+<h3>Please Enter Your Information</h3>
+First name:<br><input type="text"class="name" name=<"firstname"><br>
+Last name:<br> <input type="text" class="name"name=<"lastname"><br>
+Age: <br><input type="text" class="name"name=<"Age"><br>
+(Optional)Email: <br> <input type= "text" class="name"name=<"email"><br>
+
+
+<br>
+
+<div class="question">
+What is your gender?<br>
+<input type="radio" name= "sex" value= "male"> Male<br>
+<input type="radio" name= "sex" value="female"> Female<br>
+<input type="radio" name= "sex" value="prefer not to answer"> Prefer not to Answer<br>
+
+<br>
+
+
+<h3><u>Let's Get Started</u></h3>
+
+
+1. Use the website for a few minutes. What do you like about it?(Select all that apply):<br>
+<input type="checkbox" name= "like" value="Pictures"> Pictures/Graphics<br>
+<input type="checkbox" name= "like" value="Items"> Organization of items<br>
+<input type="checkbox" name= "like" value="Discounts"> The amount of discounted items<br>
+<input type="checkbox" name= "like" value="Navigation"> Simple and easy navigation<br>
+<input type="checkbox" name= "like" value="Shipping"> Free shipping<br>
+
+<br>
+
+
+
+2. What stands out the most about the website?<br>
+<input type="radio" name= "nice" value= "colors"> Colors<br>
+<input type="radio" name= "nice" value="pictures"> Pictures<br>
+<input type="radio" name= "nice" value="layout and design"> Layout and Design<br>
+<input type="radio" name= "nice" value="simplicity"> Simplicity<br>
+
+<br>
+3. On a scale of 1 to 5 (1 being the worst and 5 being the best), what would you rate the usability of the website?<br>
+<select name="favorite">
+	<option value="blank" selected= "selected"> </option>
+	<option value="1" > 1</option>
+	<option value="2" > 2</option>
+	<option value="3" > 3</option>
+	<option value="4" > 4</option>
+	<option value="5" > 5</option>
+
+</select>
+
+<br>
+<br>
+
+4. What was one of the first things you clicked on the website? What made you click it? Please explain.<br> <input type="text" class="shrt"shrt=<"ShortAnswer">
+<br>
+
+<br>
+
+5.Try and find the wide selection of Men's Tennis shoes. How hard was it to find?<br>
+<input type="radio" name= "shoes" value= "easy, not hard at all"> Easy, not hard at all<br>
+<input type="radio" name= "shoes" value="manageable, not too hard"> Manageable, not too hard<br>
+<input type="radio" name= "shoes" value="pretty difficult, took a while"> Pretty difficult, took a while<br>
+<input type="radio" name= "shoes" value="impossible"> Impossible. Literally.<br>
+<br>
+
+
+6. Assuming you are a tennis player, you are enticed to shop on this website. <br>
+<select name="favorite">
+	<option value="blank" selected= "selected"> </option>
+	<option value="Strong Agree" > Strongly Agree</option>
+	<option value="Agree" > Agree</option>
+	<option value="Neutral" > Neutral</option>
+	<option value="Disagree" > Disagree</option>
+	<option value="Strongly Disagree" > Strongly Disagree</option>
+	
+	
+
+</select>
+</div>
+
+<br>
+<br>
+Improvements/Comments:<br>
+<textarea rows="5" cols="30"></textarea>
+
+<br>
+<br>
+	
+<br><input type="submit"class="submit" value="Submit the Questionnaire"/>
+
+
+
+
+</form>
+
+<p id="lastline">Website designed by Calvin Quong</p>
+
+</body>
+</html>
