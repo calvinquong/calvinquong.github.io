@@ -70,8 +70,9 @@
   <div id="displayCart"></div>
 </div>
 
-<script src="grocery.js"></script>
+
 <script src="js/scriptMain"></script>
+<script src="js/scriptSecond"></script>
 
 <p id="lastline" style="position: fixed; bottom: 0; width:98%; text-align: right">Website designed by Calvin Quong</p>
 
