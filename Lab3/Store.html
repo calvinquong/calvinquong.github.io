@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Pagination pattern was taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_pagination-->
+	<!--This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+	<link href="StyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<h1 class="storename"; >CQ Food Mart</h1>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+
+
+  
+  <p>Do you have a membership with us?:</p>
+  <input type="radio" name = "hi" id="no"  value="yes" onclick="discount()">
+  <label for="yes">Yes</label><br>
+  <input type="radio" name="hi" id="no"  value="no">
+  <label for="no">No</label><br>
+
+
+  <p>If you selected yes, please type your membership ID number below.</p>
+  <label for="email3">Member ID:</label>
+  <input type="mail3" id="mail3" name="mail3"><br><br>
+
+  <p>If not, and you would like one for future discounts, please type your email below.</p>
+  <label for="email">Email:</label>
+  <input type="mail" id="mail" name="mail"><br><br>
+
+<br>
+	
+	
+	What type of food are you looking for?<br>
+	
+	
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetables">Vegetables</option>
+    <option value="Gluten Free Foods">Gluten Free Foods</option>
+    <option value="Organic Foods">Organic Foods</option>
+    <option value="All of the above">All</option>
+	</select>
+	
+<!--<input type="checkbox" value="Vegetarian"> Vegetarian<br> //don't know how to implement the checkboxes... sry
+<input type="checkbox" value="GlutenFree"> GlutenFree<br>
+<input type="checkbox" value="Organic"> Organic<br>
+<input type="checkbox"  value="None"> None<br>-->
+	
+
+</div>
+
+<div id="Products" class="tabcontent">
+
+ <br>
+	 <button class="accordion">Fruits and Vegetables</button>
+<div class="panel">
+  
+  <p>Pears - $0.67</p> 
+  <button id="pears" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Apples - $1.00</p>
+  <button id="apples" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Broccoli - $1.99</p>
+  <button id="broccoli" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Carrots - $2.00</p>
+  <button id="carrots" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+ <p></p>
+  
+  <p>Potatoes - $2.99</p>
+  <button id="potatoes" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p></p>
+
+</div>
+	<button class="accordion">Grain and Dairy Products</button>
+<div class="panel">
+ <p>Bread - $2.35</p>
+ <button id="bread" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Milk - $4.49</p>
+  <button id="milk" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Cheese - $5.99</p>
+  <button id="cheese" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p></p>
+</div>
+
+	<button class="accordion">Meat</button>
+<div class="panel">
+  
+
+  <p>Pork Chop - $8.99</p>
+  <button id="pork chop" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Steak - $15.00</p>
+  <button id="steak" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Salmon - $10.00</p>
+  <button id="salmon" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p>Chicken - $35.00</p>
+  <button id="chicken" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p></p>
+
+</div>
+	<button class="accordion">Beverages</button>
+<div class="panel">
+ 
+  <p>Water bottles 24pk - $1.99</p>
+  <button id="water bottles 24pk" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+   <p>Orange Juice 2L - $4.99</p>
+   <button id="orange juice 2L" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+   <p>Coca-cola 12pk - $12.99</p>
+   <button id="coca-cola 12pk" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+  <p></p>
+this
+</div>
+	<button class="accordion">Snacks</button>
+<div class="panel">
+  <p>Gummy Bears - $3.49</p>
+  <button id="gummy bears" type="button" class="block" onclick="allergy(this.id)">
+  Add item to cart.
+  </button>
+</div>
+
+  <h3>Your targeted products</h3>
+  <p>We have displayed products based on your preferences. 
+<br> Please select any of the foods that you want to add to cart.</p>
+
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+
+	
+	<p>Here are pictures of each product listed in chronological order:</p>
+   	<div id="imgContainer">
+        
+        
+    </div>
+
+    <br>
+	 <br>
+
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+
+		Add selected items to cart.
+	</button>
+	
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart. A 10% discount has been applied if you have a membership with us.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="grocery.js"></script>
+<script src="main.js"></script>
+
+<br>
+<br>
+
+
+<!--class="active" -->
+<div id = "footer" class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active"  href="#" onclick="openInfo(event, 'Client')">1</a>
+  <a class="active" href="#" onclick="openInfo(event, 'Products')">2 </a>
+  
+  <a class="active" href="#" onclick="openInfo(event, 'Cart')">3</a>
+  <a href="#">&raquo;</a>
+</div>
+<p id="lastline" style="position: fixed; bottom: 0; width:98%; text-align: right">Website designed by Calvin Quong</p>
+
+
+</body>
+</html>
