@@ -26,7 +26,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		source:"Image.jpg",
+		source:"broccoli.jpg",
 		price: 1.99
 	},
 	{
@@ -35,7 +35,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 
-		source:"Image 15.jpg",
+		source:"water.jpg",
 		price: 1.99
 	},
 	{
@@ -43,7 +43,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		source:"Image 2.jpg",
+		source:"carrots.jpg",
 		price: 2.00
 	},
 	{
@@ -51,7 +51,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		source:"Image 3.jpg",
+		source:"bread.jpg",
 		price: 2.35
 	},
 	{
@@ -59,7 +59,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		source:"Image 4.jpg",
+		source:"peppers.jpg",
 		price: 2.49
 	},
 {
@@ -67,7 +67,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		source:"Image 5.jpg",
+		source:"potatoes.jpg",
 		price: 2.99
 	},
 	{
@@ -76,7 +76,7 @@ var products = [
 		glutenFree: false,
 		organic: false,
 
-		source:"Image 6.jpg",
+		source:"gummy.jpg",
 		price: 3.49
 	},
 	{
@@ -85,7 +85,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 
-		source:"Image 11.jpg",
+		source:"milk.jpg",
 		price: 4.49
 
 	},
@@ -95,7 +95,7 @@ var products = [
 		glutenFree: false,
 		organic: false,
 
-		source:"Image 13.jpg",
+		source:"oj.jg",
 		price: 4.99
 	},
 	{
@@ -104,7 +104,7 @@ var products = [
 		glutenFree: true,
 		organic: true,
 
-		source:"Image 12.jpg",
+		source:"cheese.jpg",
 		price: 5.99
 	},
 	{
@@ -112,7 +112,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		source:"Image 7.jpg",
+		source:"porkchop.jpg",
 		price: 8.99
 	},
 {
@@ -120,7 +120,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		source:"Image 8.jpg",
+		source:"salmon.jpg",
 		price: 10.00
 	},
 	{
@@ -129,7 +129,7 @@ var products = [
 		glutenFree: false,
 		organic: false,
 
-		source:"Image 14.jpg",
+		source:"coca.jpg",
 		price: 12.99
 	},
 	{
@@ -137,7 +137,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		source:"Image 9.jpg",
+		source:"steak.jpg",
 		price: 15.00
 	},
 	{
@@ -145,7 +145,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		source:"Image 10.jpg",
+		source:"chicken.jpg",
 		price: 35.00
 	}
 ];
