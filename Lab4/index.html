@@ -1,0 +1,412 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Module 4 - Labo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+   
+        
+    
+
+    <div id= "hi" class="container-md p-3 my-3 border bg-dark text-white">
+        <img id= "logo" src="logo.jpg" width="100" height="100">
+        <h1> Calvino's Bike Repair Shop</h1>
+        <p>Fixing Bikes Since the Dawn of Cycling &trade;</p>
+
+
+    </div>
+     <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+
+      <p style= "text-align:center;"> Store located at <strong> 45 Elizabeth Street, Pickering, Ontario </strong> </p>
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+    <div id=nav>
+        <div >Home</div>
+        <div >Repairs</div>
+        <div >Shop Parts</div>
+        <div >Contact us</div>
+    </div>
+    <br>
+    <div class="container" >
+        <h2 id=notice>Important Notice</h2>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert"></button>
+            Due to the recent covid-19 outbreak, we are asking all customers to please <strong> wear a mask.</strong><br>
+            Thank you for your cooperation.
+        </div>
+    </div>
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+   <!-- <div class="container-md p-3 my-3 border bg-light text-success">
+        <h3>Let us tell you about our expertise</h3>
+        <p>We can <mark>cut hair</mark></p>
+        <p class="text-center" >Align wheels</p>
+        <p class="text-uppercase">Write in uppercase</p>
+        <p class="text-center text-uppercase" >centered and uppercase</p>
+    </div>-->
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user-->
+    <div class="container">
+        <h2>Service description</h2>
+        <p>Here is a list of services offered</p>            
+        <table class="table table-primary table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description and cost of labour</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Painting</td>
+                <td>Touch-ups or full body works- $99</td>
+                
+            </tr>
+            <tr>
+                <td>Wheel replacement</td>
+                <td>Replacing set of wheels- $150</td>
+            </tr>
+            <tr>
+                <td>Tire maintanence</td>
+                <td>Checking air pressure along with balancing the tires- $35</td>
+            </tr>
+            <tr>
+                <td>Safety check</td>
+                <td>Checking for tight wheels, brake functionality, and handlebar connection- $35</td>
+            </tr>
+            <tr>
+                <td>Gears and Brakes check</td>
+                <td>Checking for performance of brakes/gears, cable replacement if needed- $20</td>
+            </tr>
+            <tr>
+                <td>Lubrication</td>
+                <td>Lubricate all necessary parts of the gears and chains- $50</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <!-- You'll certainly need buttons at some point in your site -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
+    <!-- This idea is already part of the components in Bootstrap 
+    <div class="container">
+        <h2>Button States</h2>
+        <button type="button" class="btn btn-warning">Primary Button</button>
+        <button type="button" class="btn btn-warning active">Active Primary</button>
+        <button type="button" class="btn btn-warning" disabled>Disabled Primary</button>
+    </div> -->
+
+
+ 
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <!--<div class="container p-3">
+        <h2>Meet our hairdressers</h2>
+        <div class="card-columns">
+            <div class="card bg-warning" style="width:200px">
+                <img class="card-img-top" src="Jule.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Jules</h4>
+                    <p class="card-text">Jules has been cutting hair for 10 years.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="Jule.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Jules</h4>
+                    <p class="card-text">The curly hair specialist</p>
+                    
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Jules has been cutting hair for 10 years ... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+    <div class="container">
+        <h2>More information</h2>
+       <p> About us</p>
+       <p>
+
+        At Calvino's bike repair shop, we pride ourselves in giving you 110% effort when performing our due dilligence on repairing your bike. We are happy to answer any questions you have or have a chat with you about anything you choose to pass time. We have been in business for over 25 years and we are fully-versed in the bike-repairing field.
+        <br>
+        <br>Our service costs do not include the price of parts.
+       <br> We are located at 45 Elizabeth Street, Pickering, Ontario
+        
+        <br>
+        <br><strong>Hours</strong><br>
+        Monday - Friday 6:30 AM - 8:00 PM<br>
+        Saturday 7:30 AM - 6:00 PM<br>
+        Sunday CLOSED</p>
+<br>
+        <a id="but1" href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our professional mechanic</a>
+        <div id="mechanics" class="collapse">
+            <div class="card bg-warning" style="width:500px; margin:0 auto;" >
+                <img class="card-img-top" src="Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Calvino</h4>
+                    <p class="card-text">Calvino has a PhD in mechanical engineering and is a national champion cyclist. He has participated in the Tour de France race three times during his prime cycling years from 1999-2007.<br> <br>
+
+                    Calvino is a skilled mechanic especially when it comes to fixing bikes. He has amassed over 20 years experience at diagnosing and repairing them. You will not regret paying for his services.
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+   <!-- <div class="container">
+        <div class="container-md p-3 my-3 border bg-warning text-white">
+            <h1>Erwind's and friends bike shop</h1>
+            <p>Bike fixing is our business</p>
+        </div>-->
+        <br>
+        <h2 style="text-align: center">Make an appointment</h2 >
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                                <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description and cost of labour</th>
+                <th>Image</th>
+                <th>Select Service</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Painting</td>
+                <td>Touch-ups or full body works- $99</td>
+                <td><img id= "logo" src="pbf.jpg" width="350" height="150"></td>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1">Yes</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> No</label><br>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Wheel replacement</td>
+                <td>Replacing set of wheels- $150</td>
+                <td><img id= "logo" src="wheel.jpg" width="350" height="150"></td>
+                                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle2">Yes</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+                <label for="vehicle2"> No</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Tire maintanence</td>
+                <td>Checking air pressure along with balancing the tires- $35</td>
+                <td><img id= "logo" src="tire.jpg" width="350" height="150"></td>
+                                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle3">Yes</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+                <label for="vehicle3"> No</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Safety check</td>
+                <td>Checking for tight wheels, brake functionality, and handlebar connection- $35</td>
+                <td><img id= "logo" src="safe.jpg" width="350" height="200"></td>
+                                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle4">Yes</label><br>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
+                <label for="vehicle4"> No</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Gears and Brakes check</td>
+                <td>Checking for performance of brakes/gears, cable replacement if needed- $20</td>
+                <td><img id= "logo" src="gab.jpg" width="350" height="150"></td>
+                                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle5">Yes</label><br>
+                <input type="checkbox" id="vehicle5" name="vehicle5" value="Bike">
+                <label for="vehicle5"> No</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Lubrication</td>
+                <td>Lubricate all necessary parts of the gears and chains- $50</td>
+                <td><img id= "logo" src="bikelube.jpg" width="350" height="150"></td>
+                                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle6">Yes</label><br>
+                <input type="checkbox" id="vehicle6" name="vehicle6" value="Bike">
+                <label for="vehicle6"> No</label><br>
+                </td>
+            </tr>
+
+
+            </tbody>
+        </table>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date (dd:mm:yy)</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19" id="dateInput">
+                            </div>
+                        </div>
+                             <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Time (hh:mm) </label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="18:45" id="TimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <p>Enter Name</p>
+
+
+                                                    <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="Name" id="TimeInput">
+                            </div>
+                            <br>
+                            <p>Enter email</p>
+
+                                                                                <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="example@host.com" id="TimeInput">
+                            </div>
+                            <br>
+                                <p>Enter phone number</p>
+                                                                                <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="123-456-7899" id="TimeInput">
+                            </div>
+                    </div>
+
+                <div class="col-10" id="buttocks">
+  <input value="submit" title="Search" type="submit" id="btn_s"> 
+  
+    </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+    <div class="container">
+        <h2>We appreciate feedback!</h2>
+        <!-- Trigger the modal with a button -->
+        <button id="but1" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Take Quick Survey</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2>How was your experience on our website?</h2>
+                        <p>Tell us:</p>
+                        <form>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Good</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Bad</label>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+<div id = "footer" class="container-md p-3 my-3 border bg-dark text-white">
+<p style = "font-size: 20px;">Contact Us</p>
+
+Phone: 647-542-9766
+<br>
+Email: repairs@calvinobikestore.com
+<br>
+<br>
+Facebook: Calvino Bike Repair
+<br>Instagram: CalvinoBikeRepair69
+</div>
+
+
+<p id="lastline" style="bottom: 0; width:98%; text-align: right">Website designed by Calvin Quong</p>
+
+
+</body>
+</html>
