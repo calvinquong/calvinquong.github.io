@@ -78,9 +78,9 @@ $(document).ready(function(){
         }
     });
 	          $("#creditcard").on("change", function(){
-        if (!validatePhone("creditcard")){
+        if (!validateCard("creditcard")){
             alert("Invalid credit card number. Please try again and follow the formatting.");
-            $("#creditcard").val("xxxxxxxxxxxxxxxx");
+            $("#creditcard").val("xxxx xxxx xxxx xxxx");
             $("#creditcard").addClass("error");
         }
         else {
@@ -117,7 +117,7 @@ $(document).ready(function(){
 
             if (!validateCard("creditcard")){
             alert("Invalid credit card number. Please try again and follow the formatting.");
-            $("#creditcard").val("xxxxxxxxxxxxxxxx");
+            $("#creditcard").val("xxxx xxxx xxxx xxxx");
             $("#creditcard").addClass("error");
         }
         else {
@@ -166,6 +166,7 @@ function validatePhone(txtPhone) {
     // This filter asks for something like (12345), so parentheses with any number (at least 1)
     // of digits
     var filter = /^[0-9]\d{2}-\d{3}-\d{4}$/;
+   // var filter = //;
     if (filter.test(a)) {
         return true;
     }
@@ -178,11 +179,13 @@ function validateCard(crdnum) {
     var a = document.getElementById(crdnum).value;
     // This filter asks for something like (12345), so parentheses with any number (at least 1)
     // of digits
-    var filter =/^[0-9]\d{2}-\d{3}-\d{4}$/;
+   var filter = /^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$/;
     if (filter.test(a)) {
+    	//alert(a);
         return true;
     }
     else {
+    	//alert("hello" + a);
         return false;
     }
 }
