@@ -1,0 +1,76 @@
+/* Style Sheet */
+
+h1.webname{
+text-align:center;
+Font-family: Impact, Charcoal, sans-serif;
+color: yellow;
+} 
+
+Html{
+Background-color:white;
+
+}
+.submit{
+
+  display: block;
+  width: 50%;
+ margin-left: auto;
+    margin-right: auto;
+  border: none;
+  padding: 20px 28px;
+  font-size: 35px;
+  text-align: center; 
+  cursor: pointer; 
+  background-color: yellow;
+
+
+}
+body{
+	font-size: 35px;
+	background-color:lightgreen ;
+	
+	 width: 1200px;
+ 	 border: 2px solid black;
+  	padding: 0px 20px 20px 20px
+	
+	
+}
+
+.name{
+	
+	color:black;
+	text-align:left;
+}
+
+
+#lastline {
+
+  text-align: right;
+  font-style: italic;
+  
+}
+
+input[type=radio]{
+
+       transform: scale(2);
+    
+}
+input[type=checkbox]{
+       transform: scale(2);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Written by Calvin Quong */

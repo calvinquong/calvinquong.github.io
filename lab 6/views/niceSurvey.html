@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body style="background-color: lightblue">
+    <br> 
+    <br>
+    <h3 style="text-align:center"> What are your thoughts on the UI of <a href="https://www.merchantoftennis.com/"target="_blank"> Merchant of Tennis</a>' website?</h3>
+
+	<div class="container-md p-3 my-3 border bg-success text-white" id="survey">
+    <h1 class="text-white">Survey</h1>
+<form>
+
+<br>
+<br>
+
+<h3>Please Enter Your Information</h3>
+First name:<br><input type="text"class="name" name="firstn"<"firstname"><br>
+Last name:<br> <input type="text" class="name"name="lastn"<"lastname"><br>
+Age: <br><input type="text" class="name"name="age"<"Age"><br>
+
+
+
+<br>
+
+<div class="question">
+What is your gender?<br>
+<input type="radio" name= "gender" value= "Male"> Male<br>
+<input type="radio" name= "gender" value="Female"> Female<br>
+<input type="radio" name= "gender" value="prefer not to answer"> Prefer not to Answer<br>
+
+<br>
+
+
+<h3><u>Let's Get Started</u></h3>
+
+
+1. Use the website for a few minutes. What do you like about it?(Select all that apply):<br>
+<input type="checkbox" name= "q1" value="Pictures/Graphs"> Pictures/Graphics<br>
+<input type="checkbox" name= "q1" value="Organization of Items"> Organization of items<br>
+<input type="checkbox" name= "q1" value="The amount of discounted items"> The amount of discounted items<br>
+<input type="checkbox" name= "q1" value="Simple and easy navigation"> Simple and easy navigation<br>
+<input type="checkbox" name= "q1" value="Free shipping"> Free shipping<br>
+
+<br>
+
+
+
+2. What stands out the most about the website?<br>
+<input type="radio" name= "q2" value= "Colors"> Colors<br>
+<input type="radio" name= "q2" value="Pictures"> Pictures<br>
+<input type="radio" name= "q2" value="Layout and Design"> Layout and Design<br>
+<input type="radio" name= "q2" value="Simplicity"> Simplicity<br>
+
+<br>
+3. On a scale of 1 to 5 (1 being the worst and 5 being the best), what would you rate the usability of the website?<br>
+<select name="q3">
+  <option value="blank" selected= "selected"> </option>
+  <option value="1" > 1</option>
+  <option value="2" > 2</option>
+  <option value="3" > 3</option>
+  <option value="4" > 4</option>
+  <option value="5" > 5</option>
+
+</select>
+
+<br>
+<br>
+
+4. What was one of the first things you clicked on the website? What made you click it? Please explain.<br> 
+<input type="text" class="name"name="q4"><br>
+
+<br>
+
+<br>
+
+5.Try and find the wide selection of Men's Tennis shoes. How hard was it to find?<br>
+<input type="radio" name= "q5" value= "Easy, not hard at all"> Easy, not hard at all<br>
+<input type="radio" name= "q5" value="Manageable, not too hard"> Manageable, not too hard<br>
+<input type="radio" name= "q5" value="Pretty difficult, took a while"> Pretty difficult, took a while<br>
+<input type="radio" name= "q5" value="Impossible. Literally"> Impossible. Literally.<br>
+<br>
+
+
+6. Assuming you are a tennis player, you are enticed to shop on this website. <br>
+<select name="q6">
+  <option value="blank" selected= "selected"> </option>
+  <option value="Strong Agree" > Strongly Agree</option>
+  <option value="Agree" > Agree</option>
+  <option value="Neutral" > Neutral</option>
+  <option value="Disagree" > Disagree</option>
+  <option value="Strongly Disagree" > Strongly Disagree</option>
+  
+  
+
+</select>
+</div>
+
+<br>
+
+<br>
+  
+<br>
+<button type='submit'class="btn btn-warning"id="bb">Submit the Questionnaire</button>
+
+
+
+
+</form>
+    </div>
+        <script>// jQuery that will "listen" to the html niceSurvey.html
+$(document).ready(function(){
+
+  $('form').on('submit', function(){
+      
+      // var item = $('form input');
+      // console.log(item.serializeArray());
+
+      $.ajax({
+        type: 'POST',
+        url: '/niceSurvey',
+        data: $(this).serializeArray(),
+        success: function(data){
+          // do something with the data via front-end framework
+          // Make the submit button red, disabled and saying Thank you
+          $("#bb").css("background-color", "red");
+          $("#bb").prop("disabled", "true");
+          $("#bb").text("Thank you!");
+        }
+      });
+      return false;
+  });
+});
+</script>
+
+    <p id="lastline">Website designed by Calvin Quong</p>
+
+  </body>
+</html> 

@@ -1,0 +1,69 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>First Name</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].firstn %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Last Name</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].lastn %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Age</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].age %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+        <h2>Gender</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].gender %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+            <h2>Question 1</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].q1 %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+            <h2>Question 2</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].q2 %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+            <h2>Question 3</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].q3 %> :  <%= results[6][i].count %></li>
+    <% } %>    
+    </ul>
+            <h2>Question 4</h2>
+    <ul>
+    <% for (var i=0; i<results[7].length; i++){ %>
+        <li><%= results[7][i].q4 %> :  <%= results[7][i].count %></li>
+    <% } %>    
+    </ul>
+            <h2>Question 5</h2>
+    <ul>
+    <% for (var i=0; i<results[8].length; i++){ %>
+        <li><%= results[8][i].q5 %> :  <%= results[8][i].count %></li>
+    <% } %>    
+    </ul>
+            <h2>Question 6</h2>
+    <ul>
+    <% for (var i=0; i<results[9].length; i++){ %>
+        <li><%= results[9][i].q6 %> :  <%= results[9][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>
